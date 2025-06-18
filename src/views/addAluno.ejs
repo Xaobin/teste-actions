@@ -1,0 +1,73 @@
+<div class="bg-white rounded-lg shadow-lg p-6 max-w-2xl mx-auto">
+    <h2 class="text-2xl font-bold text-gray-800 mb-6">Adicionar Novo Aluno</h2>
+
+    <form action="/add" method="POST" class="space-y-4">
+        <div>
+            <label for="nome" class="block text-sm font-medium text-gray-700">Nome</label>
+            <input 
+                type="text" 
+                id="nome" 
+                name="nome" 
+                required
+                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+            >
+        </div>
+
+        <div>
+            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+            <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                required
+                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+            >
+        </div>
+
+        <div>
+            <label for="mediaFinal" class="block text-sm font-medium text-gray-700">Média Final</label>
+            <input 
+                type="number" 
+                id="mediaFinal" 
+                name="mediaFinal" 
+                min="0" 
+                max="10" 
+                step="0.1"
+                required
+                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+            >
+        </div>
+
+        <div>
+            <label for="nivelAcademico" class="block text-sm font-medium text-gray-700">Nível Acadêmico</label>
+            <select 
+                id="nivelAcademico" 
+                name="nivelAcademico" 
+                required
+                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+            >
+                <option value="">Selecione um nível</option>
+                <option value="Técnico">Técnico</option>
+                <option value="Graduação">Graduação</option>
+                <option value="Mestrado">Mestrado</option>
+                <option value="Doutorado">Doutorado</option>
+                <option value="Nenhum">Nenhum</option>
+            </select>
+        </div>
+
+        <div class="flex justify-end space-x-4">
+            <a 
+                href="/" 
+                class="px-4 py-2 border border-gray-300 rounded-md text-gray-700 hover:bg-gray-50"
+            >
+                Cancelar
+            </a>
+            <button 
+                type="submit" 
+                class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
+            >
+                Adicionar Aluno
+            </button>
+        </div>
+    </form>
+</div> 
