@@ -1,3 +1,5 @@
+name: GitHub Actions My Test Workflow Dispatch
+run-name: ${{ github.actor }} Está testando  o workflow dispatch 🚀
 on:
   workflow_dispatch:
     inputs:
